@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Boutique.order</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+
+            <!--logo and name-->
+           <a href="index.html" class="logo">
+             <div class="logo-and-brand-nanme">
+                <i class="fa-solid fa-star"></i>
+
+                <!--brand name-->
+                <div class="brand-name">
+                    <h1>
+                        Luxury
+                    </h1>
+                    <h2>
+                        Boutique
+                    </h2>
+                </div>
+
+
+            </div>
+
+           </a>
+          <div class="sub">
+             <div class="search-andcart">
+            
+            <!--search-->
+            <div class="search-container">
+                <input type="search" name="" id="" placeholder="Search your fashion">
+            </div>
+            <!--cart-->
+            <div class="cart">
+                  <a href="cart.html"><i class="fas fa-cart-shopping"></i> Cart</a>
+            </div>
+
+            <!--language-->
+            <div class="laguage">
+                <button id="language" class="language"><i class="fas fa-globe"></i></button>
+                <div class="mylaguages-container">
+                    <button type="button">English</button>
+                     <button type="button">Kiswahili</button>
+                      <button type="button">French</button>
+                       <button type="button">Itali</button>
+                        <button type="button">Japanese</button>
+                         <button type="button">Chinese</button>
+                          <button type="button">Ispanish</button>
+                </div>
+            </div>
+           </div>
+          </div>
+        </div>
+
+        <div class="header-sublinks">
+            <div class="sublink-container">
+                <button type="button" class="link-button"><i class="fa-solid fa-bars"></i></button>
+                <div class="sublinks">
+                  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="shop.html"><i class="fas fa-bag-shopping"></i> Shop</a>
+                    <a href="collection.html"><i class="fas fa-store"></i> Collection</a>
+                    <a href="order.html"><i class="fas fa-box"></i> Order</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="schedule.html"><i class="fas fa-stopwatch"></i> Schedule</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Booking Hero -->
+  <section class="booking-hero">
+    <img src="luxary imges\call to action.jpg" alt="Luxury furniture background" />
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Complete Your Order</h1>
+      <p>Reserve a consultation or schedule a delivery request. We will confirm your order shortly.</p>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking-wrapper">
+    <aside class="booking-aside">
+      <h2>Why order with us?</h2>
+      <ul>
+        <li><i class="fa-solid fa-badge-check"></i> Premium quality products</li>
+        <li><i class="fa-solid fa-truck"></i> Fast delivery options</li>
+        <li><i class="fa-solid fa-bag-shopping"></i> Expert setup available</li>
+        <li><i class="fa-solid fa-shield"></i> Warranty & aftercare</li>
+      </ul>
+      <div class="aside-card">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <strong>Need help?</strong>
+          <p>Call us: +254 706 145 498</p>
+        </div>
+      </div>
+    </aside>
+
+    <form id="booking-form" class="booking-form" novalidate>
+      <div class="form-head">
+        <h2>Order Details</h2>
+        <p>Fill in your details and we’ll take it from there.</p>
+      </div>
+
+      <div class="grid">
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="John Doe" required />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="+254 700 000 000" required />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="" disabled selected>Select a category</option>
+            <option value="Sofa">Men fashion</option>
+            <option value="Bed">Women fashion</option>
+            <option value="Dining Set">Male teen fashion</option>
+            <option value="Sideboard">Female teen fashion</option>
+            <option value="Office Furniture">Male kids fashion</option>
+            <option value="Luxury Chair">Female kids fashion</option>
+             <option value="Luxury Chair">Accessories</option>
+          </select>
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="product">Product (optional)</label>
+          <input id="product" name="product" type="text" placeholder="e.g., Modern male jeans.." />
+        </div>
+
+        <div class="field">
+          <label for="quantity">Quantity</label>
+          <input id="quantity" name="quantity" type="number" min="1" step="1" value="1" required />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="date">Preferred Date</label>
+          <input id="date" name="date" type="date" required />
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="time">Preferred Time</label>
+          <input id="time" name="time" type="time" />
+        </div>
+
+        <div class="field wide">
+          <label for="address">Delivery Address</label>
+          <textarea id="address" name="address" rows="3" placeholder="Street, house number, apartment, etc." required></textarea>
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <label for="city">City</label>
+          <input id="city" name="city" type="text" placeholder="Nairobi" required />
+          <small class="error"></small>
+        </div>
+
+        <div class="field wide">
+          <label for="notes">Additional Notes (optional)</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Any special instructions"></textarea>
+        </div>
+
+        <div class="field">
+          <label>Preferred Contact</label>
+          <div class="radio-group">
+            <label><input type="radio" name="contactMethod" value="Phone" checked /> Phone</label>
+            <label><input type="radio" name="contactMethod" value="Email" /> Email</label>
+            <label><input type="radio" name="contactMethod" value="WhatsApp" /> WhatsApp</label>
+          </div>
+        </div>
+
+        <div class="field wide terms">
+          <label>
+            <input type="checkbox" id="agree" required /> I agree to the terms and privacy policy
+          </label>
+          <small class="error"></small>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="primary">Confirm Order</button>
+        <a class="secondary" href="shop.html">Continue Shopping</a>
+      </div>
+
+      <div id="booking-success" class="success hidden">
+        <i class="fa-solid fa-circle-check"></i>
+        <h3>Order received</h3>
+        <p>Thank you! We will contact you shortly to confirm your order.</p>
+        <a href="index.html" class="go-home">Go Home</a>
+      </div>
+    </form>
+  </section>
+
+   <section class="collection-banner">
+        <img src="luxary imges\call.jpeg" alt="">
+  <div class="banner-content">
+    <h1 class="collection-title">The Modern Muse Collection</h1>
+    <p class="collection-tagline">Bold styles. Effortless sophistication.</p>
+    <a href="shop.html" class="collection-cta">Shop Now</a>
+  </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+
+   <div class="footer-logo">
+                <i class="fa-solid fa-star"></i>
+
+                <!--brand name-->
+                <div class="brand-name">
+                    <h2>
+                        Luxury
+                    </h2>
+                    <h1>
+                        Boutique
+                    </h1>
+                </div>
+   </div>
+
+
+   <div class="quick-links">
+    <h1>Quick links</h1>
+    <div class="link">
+                  <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="shop.html"><i class="fas fa-bag-shopping"></i> Shop</a>
+                    <a href="collection.html"><i class="fas fa-store"></i> Collection</a>
+                    <a href="order.html"><i class="fas fa-box"></i> Order</a>
+                    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    <a href="schedule.html"><i class="fas fa-stopwatch"></i> Schedule</a>
+    </div>
+   </div>
+
+
+   <div class="social-links">
+    <h1>Find us</h1>
+
+    <div class="social">
+        <a href="https://www.facebook.com/p/The-Luxury-Boutique-100088169375048/"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://www.tiktok.com/discover/luxury-boutique"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/luxuryboutiqueofficial/"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://x.com/luxurygroup"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://t.me/+wiGXJAA9kZ81OGRl"><i class="fa-brands fa-telegram"></i></a>
+             <a href="https://www.youtube.com/hashtag/luxuryboutique"><i class="fa-brands fa-youtube"></i></a>
+             <a href="https://uk.linkedin.com/company/luxury-boutique-collections"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="mailto:royferdinard8@gmail.com?subject=Hello&body=I%20can%20see%20you%20want%20to%20conduct%20your%20shoping%20with%20luxury%20boutique"><i class="fa-solid fa-envelope"></i></a>
+               <a href="tel:254706145498"><i class="fa-solid fa-phone"></i></a>
+    </div>
+   </div>
+
+
+   <div class="newsletter">
+    <h1>Subscribe</h1>
+    <p>
+        Subcsribe to our news letter to get updated with our latest fashions.
+    </p>
+    <div class="input-button">
+        <input type="email" name="" id="" placeholder="Enter email adress">
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+   </div>
+    </div>
+    <p class="copy">&copy;2026 Luxary Boutique. All Right Reserve</p>
+</footer>
+
+
+
+
+
+<script src="order.js"></script>
+</body>
+</html>

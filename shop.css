@@ -1,0 +1,708 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    background-color: white;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: antiquewhite;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    position: fixed;
+    z-index: 1000;
+}
+.header-container{
+width: 100%;
+height: 5rem;
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+padding: 0.5rem;
+
+}
+.logo-and-brand-nanme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.logo{
+text-decoration: none;
+}
+.logo-and-brand-nanme h1{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2rem;
+    height: 0.5rem;
+}
+.logo-and-brand-nanme h2{
+     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkgreen;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo-and-brand-nanme i{
+    border-radius: 50%;
+    width: 2rem;
+    height:2rem;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    padding: 0.1rem;
+    margin-top: 0.1rem;
+}
+.logo-and-brand-nanme i:hover{
+    transform: rotateY(360deg);
+}
+.search-andcart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+.search-andcart input{
+    width: 12rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: 1px solid darkgreen;
+    text-align: center;
+    color: darkgreen;
+}
+.search-andcart input::placeholder{
+    color: darkgreen;
+}
+.search-andcart input:hover{
+    border: 2px solid darkgreen;
+}
+.search-andcart input:focus{
+    border: 2px solid darkgreen;
+}
+.search-andcart a{
+    text-decoration: none;
+    color: darkgreen;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    transition: all 0.7s ease-in-out;
+}
+.search-andcart a:hover{
+    background-color: white;
+}
+.search-andcart a:focus{
+    background-color: white;
+}
+.search-andcart button{
+    color: darkgreen;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    width: 3rem;
+
+}
+.search-andcart button:hover{
+    background-color: white;
+}
+
+.mylaguages-container{
+    display: none;
+    transition: display 0.8s ease, max-height 0.8s ease;
+}
+.mylaguages-container.show{
+      display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6.9rem;
+    left: 0;
+    width: 50%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    gap: 0.2rem;
+    z-index: 10;
+    
+}
+.mylaguages-container.show button{
+    border-bottom: 1px solid antiquewhite;
+    width: 100%;
+    border-radius: none;
+  margin-bottom: 0.1rem;
+  padding: 0.5rem;
+      transition: all 0.7s ease-in-out;
+}
+.mylaguages-container.show button:hover{
+    background-color: darkgreen;
+    color: antiquewhite;
+}
+
+.sub{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.header-sublinks{
+    width: 100%;
+    height: 3rem;
+    background-color: darkgreen;
+}
+.sublink-container button{
+    background-color: transparent;
+    border-color: transparent;
+    color: antiquewhite;
+    font-size: 1.2rem;
+    float: inline-end;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+.sublinks{
+    display: none;
+}
+.sublinks.show{
+     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 6.9rem;
+    left: 0;
+    width: 50%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    gap: 0.2rem;
+    z-index: 10;
+}
+.sublinks.show a{
+      border-bottom: 1px solid antiquewhite;
+    width: 100%;
+    border-radius: none;
+  margin-bottom: 0.1rem;
+  padding: 0.5rem;
+      transition: all 0.7s ease-in-out;
+      text-decoration: none;
+      color: darkgreen;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sublinks.show a:hover{
+    background-color: darkgreen;
+    color: antiquewhite;
+}
+
+
+.category-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.category{
+    width: 96%;
+    height: 20rem;
+    position: relative;
+}
+.category-container img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.category-container img:hover{
+    transform: scale(1.1);
+}
+.signature-image img:hover{
+    transform: scale(1.1);
+}
+.badge{
+    background-color: black;
+    color: antiquewhite;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    width: auto;
+    height: 1.9rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+.signature-production-head{
+    padding-top: 10rem;
+}
+.signature:hover{
+    transform: translateY(-4px);
+}
+.signature-production-head h1{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkgreen;
+    text-align: center;
+    font-size: 1.7rem;
+}
+.signature-production-head hr{
+     width: 5rem;
+    border: 2px solid antiquewhite;
+}
+.signature-production-head p{
+     font-family: 'Lora', serif;
+    color: #333;
+    padding-left: 1rem;
+    font-style: italic;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.signature-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.signature{
+    width: 20rem;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 2px 4px 6px grey;
+    background:#fff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    display:flex;
+    flex-direction:column;
+    transition:transform .2s ease, box-shadow .2s ease;
+    position: relative;
+
+}
+.signature-content{
+    display: flex;
+    flex-direction: column;
+    padding:14px 14px 12px;
+    top: 0;
+}
+.signature-content h6{
+    color: rgb(0, 44, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+.signature-content p{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: #333;
+     margin: 0;
+     line-height:1.35
+}
+.signature-image{
+position:relative;
+aspect-ratio:4/3;
+background:#eee;
+ overflow: hidden;
+
+
+}
+.signature img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    inset:0;
+     transition: all 0.8s ease-in-out;
+
+ 
+}
+.sticker{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:rgba(0,0,0,.65);
+    color:#fff;
+    font-size:.75rem;
+    padding:4px 8px;
+    border-radius:999px;
+}
+.cart-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:auto;
+    padding:12px 14px;
+    border-top:1px solid #eee;
+}
+.cart-price button{
+    height:2rem;
+    padding:0 1rem;
+    border-radius:10px;
+    border:2px solid darkgreen;
+    background:darkgreen;
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+    transition: all 0.6s ease-in-out;
+}
+.cart-price button:hover{
+    background-color: white;
+    color: darkgreen;
+}
+.cart-price span{
+    font-weight: 800;
+    color: darkgreen;
+    font-size: 1.08rem;
+}
+.collection-banner{
+     position: relative;
+  width: 100%;
+  height: 20rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  margin-top: 2rem;
+}
+.collection-banner img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: -2;
+    position: absolute;
+}
+.banner-content h1{
+     color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+.banner-content p{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: white;
+     text-align: center;
+}
+.banner-content a{
+    text-decoration: none;
+    color: white;
+    background-color: darkgreen;
+    padding: 0.5rem;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid darkgreen;
+    transition: all 0.8s ease-in-out;
+}
+.banner-content a:hover{
+    background-color: white;
+    color: darkgreen;
+}
+.banner-content{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.559);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: darkgreen;
+    padding-bottom: 0.1rem;
+}
+.footer-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-logo{
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  padding-top: 1rem;
+}
+.footer-logo i{
+    background-color: antiquewhite;
+    height: 4rem;
+    height: 4rem;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 1rem;
+   border-radius: 50%;
+   color: darkgreen;
+}
+.footer-logo h1{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: antiquewhite;
+     letter-spacing: 0.3rem;
+     display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.footer-logo h2{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: antiquewhite;
+     letter-spacing: 0.3rem;
+     width: 100%;
+     display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+.quick-links h1{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: goldenrod;
+     letter-spacing: 0.3rem;
+     display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.link{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+.link a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 0.5rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: all 0.7s ease-in-out;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link a:hover{
+    background-color: antiquewhite;
+    color: darkgreen;
+}
+.social-links h1{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: goldenrod;
+     letter-spacing: 0.3rem;
+     display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.social{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.social a{
+     text-decoration: none;
+    color: antiquewhite;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: 2px solid antiquewhite;
+    transition: all 0.7s ease-in-out;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.social a:hover{
+    background-color: antiquewhite;
+    color: darkgreen;
+}
+.newsletter h1{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: goldenrod;
+     letter-spacing: 0.3rem;
+     display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.newsletter p{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: white;
+     text-align: center;
+     line-height: 1.5em; 
+}
+.input-button{
+     display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+.input-button input{
+    width: 80%;
+    height: 2.5rem;
+    background-color: transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid antiquewhite;
+    color: antiquewhite;
+    transition: all 0.6s ease-in-out;
+}
+.input-button input:hover{
+    box-shadow: 0 2px 4px 6px antiquewhite;
+}
+.input-button input:focus{
+    box-shadow: 0 2px 4px 6px antiquewhite;
+}
+.input-button input::placeholder{
+    color: antiquewhite;
+}
+.input-button button{
+    width: 20%;height: 2.9rem;
+     border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: antiquewhite;
+    color: darkgreen;
+    font-size: 2rem;
+    border: 2px solid antiquewhite;
+}
+.input-button button:hover{
+    background-color: transparent;
+    color: antiquewhite;
+}
+.copy{
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    background-color: antiquewhite;
+    color: darkgreen;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+
+@media  (min-width: 768px) {
+    .search-andcart input{
+        width: 20rem;
+    }
+    .link-button{
+        display: none;
+    }
+    .sublink-container{
+          display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .sublinks{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+
+    }
+    .sublinks a{
+        color: antiquewhite;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        transition: all 0.8s ease-in-out;
+
+    }
+    .sublinks a:hover{
+        background-color: antiquewhite;
+        color: darkgreen;
+        border-radius: 20px;
+        
+    }
+    .header-sublinks{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .category-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.category{
+    width: 18rem;
+    height: 18rem;
+    position: relative;
+}
+  footer{
+        padding: 0.5rem;
+    }
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.link{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.social{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.input-button{
+    margin-top: 2rem;
+}
+
+}
