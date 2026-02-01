@@ -24,3 +24,11 @@ function displaylink(){
     }
 }
 document.querySelector(".link-button").addEventListener("click", displaylink);
+
+
+
+
+function addtocart(){
+    document.querySelector(".add-button").textContent="Added";
+}
+ document.querySelector(".add-button").addEventListener("click", addtocart);
