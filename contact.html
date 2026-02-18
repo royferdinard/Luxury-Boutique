@@ -116,13 +116,13 @@
         <div class="card form-card">
             <h2 data-lang="send_message">Send a Message</h2>
 
-            <form>
-                <input type="text" data-lang-placeholder="full_name" placeholder="Full Name" required>
-                <input type="email" data-lang-placeholder="email_address" placeholder="Email Address" required>
-                <input type="tel" data-lang-placeholder="phone_number" placeholder="Phone Number">
-                <input type="text" data-lang-placeholder="subject" placeholder="Subject">
-                <textarea rows="5" data-lang-placeholder="your_message" placeholder="Your Message" required></textarea>
-                <button type="submit" data-lang="send_btn">Send Message</button>
+            <form  class="contact-form">
+                <input type="text" id="name" data-lang-placeholder="full_name" placeholder="Full Name" required>
+                <input type="email" id="email" data-lang-placeholder="email_address" placeholder="Email Address" required>
+                <input type="tel" id="number" data-lang-placeholder="phone_number" placeholder="Phone Number">
+                <input type="text" id="subject" data-lang-placeholder="subject" placeholder="Subject">
+                <textarea rows="5" id="message" data-lang-placeholder="your_message" placeholder="Your Message" required></textarea>
+                <button type="submit" data-lang="send_btn" onclick="submitContact()">Send Message</button>
             </form>
         </div>
     </div>

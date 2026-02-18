@@ -94,3 +94,22 @@ document.querySelector(".link-button").addEventListener("click", displaylink);
     });
   }
 })();
+
+
+
+
+function submitContact(){
+  const form = document.querySelector(".contact-form");
+  const name = document.querySelector("#name").value.trim();
+  const email = document.querySelector("#email").value.trim();
+  const contact = document.querySelector("#contact").value.trim();
+  const subject = document.querySelector("#subject").value.trim();
+  const message = document.querySelector("#message").value.trim();
+  let notification = document.createElement("span");
+
+  if(form.value===""){
+    notification.innerText= "enter valid details";
+    document.body.appendChild=notification;
+  }
+
+}
